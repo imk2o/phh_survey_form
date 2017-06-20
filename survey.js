@@ -1,3 +1,4 @@
+// [Q+] アンケート結果をメールで送信する以外の方法として、どのようなものがあるか調べてみよう
 let email_address = '(ここに自分のメールアドレスを記入)';
 let subject = 'アンケート結果';
 
@@ -39,6 +40,8 @@ function collectSurveyResults() {
             surveys.push('派閥: ' + kinotake.value);
         }
     }
-    
+
+    // [Q2] Q1.で追加したアンケートの回答が送信されるよう、JavaScriptプログラムを追加しよう
+
     return surveys;
 }
