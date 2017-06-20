@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>アンケート</title>
+
+    <script src="survey.js"></script>
+</head>
+<body>
+    <h1>アンケート</h1>
+
+    <form>
+    <h2>Q1. ニックネームを入力してください</h2>
+    <label for="nickname">ニックネーム: </label>
+    <input id="nickname" name="nickname" type="text" size="20" />
+
+    <h2>Q2. いま使っているスマホは何ですか？</h2>
+    <label for="smartphone">機種名: </label>
+    <input id="smartphone" name="smartphone" type="text" size="20" />
+
+    <h2>Q3. 何派ですか？</h2>
+    <label><input type="checkbox" name="kinotake" value="きのこ" />きのこ派</label>
+    <label><input type="checkbox" name="kinotake" value="たけのこ" />たけのこ派</label>
+    <label><input type="checkbox" name="kinotake" value="すぎのこ" />すぎのこ派</label>
+
+    <p>
+        <input id="submit" type="button" value="送信" />
+    </p>
+    </form>
+</body>
+</html>
