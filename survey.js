@@ -8,14 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // アンケート結果を収集し、改行コードで連結する
         let results = collectSurveyResults();
-        let body = results.join('%0D%0A');
+        // let body = results.join('%0D%0A');
+        let body = results.join('\n');
 
         // メーラーを起動し、アンケート結果を送信
-        location.href = [
-            'mailto:', email_address,
-            '?subject=', subject,
-            '&body=', body
-        ].join("");
+        // location.href = [
+        //     'mailto:', email_address,
+        //     '?subject=', subject,
+        //     '&body=', body
+        // ].join("");
+        window.alert(body);
     });
 });
 
